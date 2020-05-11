@@ -1,0 +1,11 @@
+#测试套件：设置需要执行的用例,例：testcase/下的路径
+
+testSuite:
+    module:
+        soc/test_log_summary.py
+
+
+
+#设置失败重跑次数
+
+retrys: 0
