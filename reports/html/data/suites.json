@@ -1,0 +1,41 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "testcase.soc.index_page",
+    "children" : [ {
+      "name" : "test_log_summary",
+      "children" : [ {
+        "name" : "Test_LogSummary",
+        "children" : [ {
+          "name" : "test_login_lot",
+          "uid" : "993ac6ffedbe9164",
+          "parentUid" : "12608601f853c608b5692443f0d061c7",
+          "status" : "broken",
+          "time" : {
+            "start" : 1589940882326,
+            "stop" : 1589940890647,
+            "duration" : 8321
+          },
+          "flaky" : false,
+          "parameters" : [ ]
+        }, {
+          "name" : "test_logsum",
+          "uid" : "56187b269fcca0f5",
+          "parentUid" : "12608601f853c608b5692443f0d061c7",
+          "status" : "broken",
+          "time" : {
+            "start" : 1589940907501,
+            "stop" : 1589940915516,
+            "duration" : 8015
+          },
+          "flaky" : true,
+          "parameters" : [ ]
+        } ],
+        "uid" : "12608601f853c608b5692443f0d061c7"
+      } ],
+      "uid" : "21f16034be22250f47fc3dae7650ec30"
+    } ],
+    "uid" : "ca034e216385ac6efdc9845768b84add"
+  } ]
+}

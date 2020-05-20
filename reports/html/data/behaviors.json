@@ -1,0 +1,33 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "首页-数据概要用例合集",
+    "children" : [ {
+      "name" : "test_login_lot",
+      "uid" : "993ac6ffedbe9164",
+      "parentUid" : "34df06609f3fa9dc5a5a4b552f9c19e1",
+      "status" : "broken",
+      "time" : {
+        "start" : 1589940882326,
+        "stop" : 1589940890647,
+        "duration" : 8321
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_logsum",
+      "uid" : "56187b269fcca0f5",
+      "parentUid" : "34df06609f3fa9dc5a5a4b552f9c19e1",
+      "status" : "broken",
+      "time" : {
+        "start" : 1589940907501,
+        "stop" : 1589940915516,
+        "duration" : 8015
+      },
+      "flaky" : true,
+      "parameters" : [ ]
+    } ],
+    "uid" : "34df06609f3fa9dc5a5a4b552f9c19e1"
+  } ]
+}

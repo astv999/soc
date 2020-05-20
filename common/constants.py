@@ -1,7 +1,7 @@
 """
 工程常量定义.
 
-@author: logan
+@author: Logan
 """
 
 """配置文件"""

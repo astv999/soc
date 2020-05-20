@@ -1,0 +1,21 @@
+[ {
+  "uid" : "993ac6ffedbe9164",
+  "name" : "test_login_lot",
+  "time" : {
+    "start" : 1589940882326,
+    "stop" : 1589940890647,
+    "duration" : 8321
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "56187b269fcca0f5",
+  "name" : "test_logsum",
+  "time" : {
+    "start" : 1589940907501,
+    "stop" : 1589940915516,
+    "duration" : 8015
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]

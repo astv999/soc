@@ -1,4 +1,10 @@
 # pytest+selenium+allure2框架
+
+
+#### 初始化工程后，请先配置以下内容到环境变量，否则启动测试无法启动浏览器和生成报表
+- allure-2.7.0/bin
+- chromedriver
+
 ## 技术选型及版本
 - pytest:3.6.0
 - selenium:3.141.0
@@ -18,10 +24,6 @@
 - logging.yaml  配置日志输出格式
 - project.yaml  配置项目绝对路径
 - testcase.yaml 配置用例相关（需执行用例文件，重跑次数）
-
-## 配置环境变量
-- allure-2.7.0/bin
-- chromedriver
 
 ## 待实现功能
 - 告罄功能

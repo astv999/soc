@@ -1,0 +1,87 @@
+{
+  "uid" : "dc174eb6727f920d",
+  "name" : "test_logsum",
+  "fullName" : "testcase.soc.index_page.test_log_summary.Test_LogSummary#test_logsum",
+  "historyId" : "79121f05b07a9fc33e960880da1f5d94",
+  "time" : {
+    "start" : 1589939574876,
+    "stop" : 1589939574876,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "NameError: name 'details_button' is not defined",
+  "statusTrace" : "self = <testcase.soc.index_page.test_log_summary.Test_LogSummary object at 0x000001F65D1E4E80>\n\n    @allure.step(\"初始化\")\n    def setup(self):\n        self.driver = webdriver.Chrome()\n        self.driver.maximize_window()\n        self.loginpage = LoginPage(self.driver)\n        self.datasummarypage = DataSummary(self.driver)\n>       self.loginpage.login(username=\"admin\", pwd=\"Astv999.\")\n\ntestcase\\soc\\index_page\\test_log_summary.py:18: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\npages\\soc\\loginPage.py:34: in login\n    self.https_link()\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <pages.soc.loginPage.LoginPage object at 0x000001F65D2A2550>\n\n    def https_link(self):\n        '''跳过https不安全提示'''\n>       if self.findElement(details_button):\nE       NameError: name 'details_button' is not defined\n\npages\\soc\\loginPage.py:27: NameError",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "NameError: name 'details_button' is not defined",
+    "statusTrace" : "self = <testcase.soc.index_page.test_log_summary.Test_LogSummary object at 0x000001F65D1E4E80>\n\n    @allure.step(\"初始化\")\n    def setup(self):\n        self.driver = webdriver.Chrome()\n        self.driver.maximize_window()\n        self.loginpage = LoginPage(self.driver)\n        self.datasummarypage = DataSummary(self.driver)\n>       self.loginpage.login(username=\"admin\", pwd=\"Astv999.\")\n\ntestcase\\soc\\index_page\\test_log_summary.py:18: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\npages\\soc\\loginPage.py:34: in login\n    self.https_link()\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <pages.soc.loginPage.LoginPage object at 0x000001F65D2A2550>\n\n    def https_link(self):\n        '''跳过https不安全提示'''\n>       if self.findElement(details_button):\nE       NameError: name 'details_button' is not defined\n\npages\\soc\\loginPage.py:27: NameError",
+    "steps" : [ {
+      "name" : "初始化",
+      "time" : {
+        "start" : 1589939574877,
+        "stop" : 1589939589559,
+        "duration" : 14682
+      },
+      "status" : "broken",
+      "statusMessage" : "NameError: name 'details_button' is not defined\n",
+      "statusTrace" : "  File \"C:\\Users\\87241\\PycharmProjects\\soc-auto-test\\venv\\lib\\site-packages\\allure_commons\\_allure.py\", line 157, in impl\n    return func(*a, **kw)\n  File \"C:\\Users\\87241\\PycharmProjects\\soc-auto-test\\testcase\\soc\\index_page\\test_log_summary.py\", line 18, in setup\n    self.loginpage.login(username=\"admin\", pwd=\"Astv999.\")\n  File \"C:\\Users\\87241\\PycharmProjects\\soc-auto-test\\pages\\soc\\loginPage.py\", line 34, in login\n    self.https_link()\n  File \"C:\\Users\\87241\\PycharmProjects\\soc-auto-test\\pages\\soc\\loginPage.py\", line 27, in https_link\n    if self.findElement(details_button):\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "首页-数据概要用例合集"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase.soc.index_page"
+  }, {
+    "name" : "suite",
+    "value" : "test_log_summary"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_LogSummary"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-MKBIA25"
+  }, {
+    "name" : "thread",
+    "value" : "10752-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.soc.index_page.test_log_summary"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "dc174eb6727f920d.json",
+  "parameterValues" : [ ]
+}

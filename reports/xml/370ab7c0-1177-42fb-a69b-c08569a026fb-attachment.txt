@@ -1,0 +1,4 @@
+INFO     root:basePage.py:244 元素：('xpath', '//*[@id="session"]/p[1]/text()')，获取文本
+INFO     root:basePage.py:115 正在定位元素信息：定位方式->xpath, value值->//*[@id="session"]/p[1]/text()
+INFO     root:basePage.py:374 在此时进行截图！！
+INFO     root:basePage.py:374 在此时进行截图！！

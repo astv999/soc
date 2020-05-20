@@ -1,0 +1,42 @@
+{
+  "fb9520cdac9b92676cac73dc838917d9" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "993ac6ffedbe9164",
+      "status" : "broken",
+      "statusDetails" : "Exception: 截图失败!",
+      "time" : {
+        "start" : 1589940882326,
+        "stop" : 1589940890647,
+        "duration" : 8321
+      }
+    } ]
+  },
+  "79121f05b07a9fc33e960880da1f5d94" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "56187b269fcca0f5",
+      "status" : "broken",
+      "statusDetails" : "Exception: 截图失败!",
+      "time" : {
+        "start" : 1589940907501,
+        "stop" : 1589940915516,
+        "duration" : 8015
+      }
+    } ]
+  }
+}

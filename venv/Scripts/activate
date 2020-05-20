@@ -37,11 +37,15 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="E:\DJ\uiTest\venv"
+VIRTUAL_ENV="C:\Users\chenjason\PycharmProjects\soc-auto-test\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
 PATH="$VIRTUAL_ENV/Scripts:$PATH"
+export PATH
+
+$ALLURE_ENV="C:\Users\chenjason\PycharmProjects\soc-auto-test\tools\allure-2.7.0\bin"
+PATH="$ALLURE_ENV:$PATH"
 export PATH
 
 # unset PYTHONHOME if set

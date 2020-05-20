@@ -1,0 +1,62 @@
+2020-05-19 10:53:30 [root] [INFO] :20: 访问网址：https://192.168.31.119
+2020-05-19 10:53:30 [root] [INFO] :20: 正在定位元素信息：定位方式->id, value值->user
+2020-05-19 10:53:40 [root] [INFO] :20: 在此时进行截图！！
+2020-05-19 10:53:40 [root] [INFO] :20: 在此时进行截图！！
+2020-05-19 14:28:01 [root] [INFO] :20: 访问网址：https://192.168.31.201
+2020-05-19 14:28:01 [root] [INFO] :20: 正在定位元素信息：定位方式->id, value值->user
+2020-05-19 14:28:11 [root] [INFO] :20: 在此时进行截图！！
+2020-05-19 14:28:11 [root] [INFO] :20: 在此时进行截图！！
+2020-05-19 14:29:43 [root] [INFO] :20: 访问网址：https://192.168.31.201
+2020-05-19 14:29:43 [root] [INFO] :20: 正在定位元素信息：定位方式->id, value值->user
+2020-05-19 14:29:53 [root] [INFO] :20: 在此时进行截图！！
+2020-05-19 14:29:53 [root] [INFO] :20: 在此时进行截图！！
+2020-05-20 09:31:30 [root] [INFO] :20: 访问网址：https://192.168.31.201
+2020-05-20 09:31:30 [root] [INFO] :20: 正在定位元素信息：定位方式->id, value值->user
+2020-05-20 09:31:40 [root] [INFO] :20: 在此时进行截图！！
+2020-05-20 09:31:40 [root] [INFO] :20: 在此时进行截图！！
+2020-05-20 09:53:09 [root] [INFO] :20: 访问网址：https://192.168.31.201
+2020-05-20 10:04:53 [root] [INFO] :20: 访问网址：https://192.168.31.201
+2020-05-20 10:04:53 [root] [INFO] :20: 正在定位元素信息：定位方式->css selector, value值->#details-button
+2020-05-20 10:04:53 [root] [INFO] :20: 点击元素:('css selector', '#details-button')
+2020-05-20 10:04:53 [root] [INFO] :20: 正在定位元素信息：定位方式->css selector, value值->#proceed-link
+2020-05-20 10:04:55 [root] [INFO] :20: 点击元素:('css selector', '#proceed-link')
+2020-05-20 10:04:55 [root] [INFO] :20: 正在定位元素信息：定位方式->id, value值->user
+2020-05-20 10:04:55 [root] [INFO] :20: 元素:('id', 'user'),输入文本：admin
+2020-05-20 10:04:55 [root] [INFO] :20: 正在定位元素信息：定位方式->id, value值->pass
+2020-05-20 10:04:55 [root] [INFO] :20: 元素:('id', 'pass'),输入文本：Astv999.
+2020-05-20 10:04:55 [root] [INFO] :20: 正在定位元素信息：定位方式->xpath, value值->//*[@id="form"]/div[2]/label[1]/button
+2020-05-20 10:05:01 [root] [INFO] :20: 点击元素:('xpath', '//*[@id="form"]/div[2]/label[1]/button')
+2020-05-20 10:05:04 [root] [INFO] :20: 元素：('xpath', '//h4[@class="module__num J_count_up"]')，获取文本
+2020-05-20 10:05:04 [root] [INFO] :20: 正在定位元素信息：定位方式->xpath, value值->//h4[@class="module__num J_count_up"]
+2020-05-20 10:05:12 [root] [INFO] :20: 在此时进行截图！！
+2020-05-20 10:05:12 [root] [INFO] :20: 在此时进行截图！！
+2020-05-20 10:14:33 [root] [INFO] :20: 访问网址：https://192.168.31.201
+2020-05-20 10:14:33 [root] [INFO] :20: 正在定位元素信息：定位方式->css selector, value值->#details-button
+2020-05-20 10:14:33 [root] [INFO] :20: 点击元素:('css selector', '#details-button')
+2020-05-20 10:14:33 [root] [INFO] :20: 正在定位元素信息：定位方式->css selector, value值->#proceed-link
+2020-05-20 10:14:35 [root] [INFO] :20: 点击元素:('css selector', '#proceed-link')
+2020-05-20 10:14:35 [root] [INFO] :20: 正在定位元素信息：定位方式->id, value值->user
+2020-05-20 10:14:35 [root] [INFO] :20: 元素:('id', 'user'),输入文本：admin
+2020-05-20 10:14:35 [root] [INFO] :20: 正在定位元素信息：定位方式->id, value值->pass
+2020-05-20 10:14:35 [root] [INFO] :20: 元素:('id', 'pass'),输入文本：Astv999.
+2020-05-20 10:14:35 [root] [INFO] :20: 正在定位元素信息：定位方式->xpath, value值->//*[@id="form"]/div[2]/label[1]/button
+2020-05-20 10:14:37 [root] [INFO] :20: 点击元素:('xpath', '//*[@id="form"]/div[2]/label[1]/button')
+2020-05-20 10:14:42 [root] [INFO] :20: 元素：('xpath', '//*[@id="session"]/p[1]/text()')，获取文本
+2020-05-20 10:14:42 [root] [INFO] :20: 正在定位元素信息：定位方式->xpath, value值->//*[@id="session"]/p[1]/text()
+2020-05-20 10:14:50 [root] [INFO] :20: 在此时进行截图！！
+2020-05-20 10:14:50 [root] [INFO] :20: 在此时进行截图！！
+2020-05-20 10:14:59 [root] [INFO] :20: 访问网址：https://192.168.31.201
+2020-05-20 10:14:59 [root] [INFO] :20: 正在定位元素信息：定位方式->css selector, value值->#details-button
+2020-05-20 10:14:59 [root] [INFO] :20: 点击元素:('css selector', '#details-button')
+2020-05-20 10:14:59 [root] [INFO] :20: 正在定位元素信息：定位方式->css selector, value值->#proceed-link
+2020-05-20 10:15:02 [root] [INFO] :20: 点击元素:('css selector', '#proceed-link')
+2020-05-20 10:15:02 [root] [INFO] :20: 正在定位元素信息：定位方式->id, value值->user
+2020-05-20 10:15:02 [root] [INFO] :20: 元素:('id', 'user'),输入文本：admin
+2020-05-20 10:15:02 [root] [INFO] :20: 正在定位元素信息：定位方式->id, value值->pass
+2020-05-20 10:15:02 [root] [INFO] :20: 元素:('id', 'pass'),输入文本：Astv999.
+2020-05-20 10:15:02 [root] [INFO] :20: 正在定位元素信息：定位方式->xpath, value值->//*[@id="form"]/div[2]/label[1]/button
+2020-05-20 10:15:04 [root] [INFO] :20: 点击元素:('xpath', '//*[@id="form"]/div[2]/label[1]/button')
+2020-05-20 10:15:07 [root] [INFO] :20: 元素：('xpath', '//h4[@class="module__num J_count_up"]')，获取文本
+2020-05-20 10:15:07 [root] [INFO] :20: 正在定位元素信息：定位方式->xpath, value值->//h4[@class="module__num J_count_up"]
+2020-05-20 10:15:15 [root] [INFO] :20: 在此时进行截图！！
+2020-05-20 10:15:15 [root] [INFO] :20: 在此时进行截图！！

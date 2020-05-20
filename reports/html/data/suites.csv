@@ -1,0 +1,3 @@
+"Status","Name","Duration in ms","Description"
+"broken","testcase.soc.index_page.test_log_summary.Test_LogSummary#test_login_lot","8321",""
+"broken","testcase.soc.index_page.test_log_summary.Test_LogSummary#test_logsum","8015",""

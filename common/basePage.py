@@ -4,14 +4,61 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.common.action_chains import ActionChains
 from common import logger
-from allure import MASTER_HELPER
-from allure.constants import *
+import allure
 import platform
 import time
 from common import readYaml
 from common import constants
 from common.common import *
 
+from os import path
+from typing import Any, Callable, Optional
+
+from _pytest.fixtures import SubRequest
+from pytest import fixture
+
+ALLURE_ENVIRONMENT_PROPERTIES_FILE = 'environment.properties'
+ALLUREDIR_OPTION = '--alluredir'
+
+
+@fixture(scope='session', autouse=True)
+def add_allure_environment_property(request: SubRequest) -> Optional[Callable]:
+
+    environment_properties = dict()
+
+    def maker(key: str, value: Any):
+        environment_properties.update({key: value})
+
+    yield maker
+
+    alluredir = request.config.getoption(ALLUREDIR_OPTION)
+
+    if not alluredir or not path.isdir(alluredir) or not environment_properties:
+        return
+
+    allure_env_path = path.join(alluredir, ALLURE_ENVIRONMENT_PROPERTIES_FILE)
+
+    with open(allure_env_path, 'w') as _f:
+        data = '\n'.join([f'{variable}={value}' for variable, value in environment_properties.items()])
+        _f.write(data)
+
+
+@fixture(autouse=True)
+def cenpprop(add_allure_environment_property: Callable) -> None:
+    platform1=platform.platform()  # 获取操作系统名称及版本号，'Windows-7-6.1.7601-SP1'
+    version=platform.version()  # 获取操作系统版本号，'6.1.7601'
+    architecture=platform.architecture()  # 获取操作系统的位数，('32bit', 'WindowsPE')
+    machine=platform.machine()  # 计算机类型，'x86'
+    node=platform.node()  # 计算机的网络名称，'hongjie-PC'
+    processor=platform.processor()  # 计算机处理器信息，'x86 Family 16 Model 6 Stepping 3, AuthenticAMD'
+    uname=platform.uname()  # 包含上面所有的信息汇总，uname_result(system='Windows', node='hongjie-PC',
+    add_allure_environment_property('platform', platform1)
+    add_allure_environment_property('version', version)
+    add_allure_environment_property('architecture', architecture)
+    add_allure_environment_property('machine', machine)
+    add_allure_environment_property('node', node)
+    add_allure_environment_property('processor', processor)
+    add_allure_environment_property('uname', uname)
 
 '''
 定义基类
@@ -24,14 +71,14 @@ class BasePage():
 
     def __init__(self, driver):
         '''获取操作系统信息'''
-        platform1=platform.platform()  # 获取操作系统名称及版本号，'Windows-7-6.1.7601-SP1'
-        version=platform.version()  # 获取操作系统版本号，'6.1.7601'
-        architecture=platform.architecture()  # 获取操作系统的位数，('32bit', 'WindowsPE')
-        machine=platform.machine()  # 计算机类型，'x86'
-        node=platform.node()  # 计算机的网络名称，'hongjie-PC'
-        processor=platform.processor()  # 计算机处理器信息，'x86 Family 16 Model 6 Stepping 3, AuthenticAMD'
-        uname=platform.uname()  # 包含上面所有的信息汇总，uname_result(system='Windows', node='hongjie-PC',
-        MASTER_HELPER.environment(platform=platform1,version=version,architecture=architecture,machine=machine,node=node,processor=processor,uname=uname)
+        # platform1=platform.platform()  # 获取操作系统名称及版本号，'Windows-7-6.1.7601-SP1'
+        # version=platform.version()  # 获取操作系统版本号，'6.1.7601'
+        # architecture=platform.architecture()  # 获取操作系统的位数，('32bit', 'WindowsPE')
+        # machine=platform.machine()  # 计算机类型，'x86'
+        # node=platform.node()  # 计算机的网络名称，'hongjie-PC'
+        # processor=platform.processor()  # 计算机处理器信息，'x86 Family 16 Model 6 Stepping 3, AuthenticAMD'
+        # uname=platform.uname()  # 包含上面所有的信息汇总，uname_result(system='Windows', node='hongjie-PC',
+        # allure.environment(platform=platform1,version=version,architecture=architecture,machine=machine,node=node,processor=processor,uname=uname)
 
         '''设置轮循时间及超时时间'''
         self.logger = logger.Logger().getLogger()
@@ -39,7 +86,7 @@ class BasePage():
         self.timeout = 10
         self.t = 0.5
 
-    def get(self,url=''):
+    def get(self, url=''):
         '''访问网址'''
         self.driver.get(url)
         self.logger.info("访问网址："+url)
@@ -332,7 +379,7 @@ class BasePage():
             self.driver.get_screenshot_as_file(file_name)
             with open(file_name, 'rb') as file:
                 f = file.read()
-                MASTER_HELPER.attach("截图", f, type=AttachmentType.PNG)
+                allure.attach("截图", f, type=allure.PNG)
             self.logger.info("已成功生成截图，请确认！")
         except:
             raise Exception("截图失败!")

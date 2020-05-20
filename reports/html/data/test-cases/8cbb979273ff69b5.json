@@ -1,0 +1,92 @@
+{
+  "uid" : "8cbb979273ff69b5",
+  "name" : "test_logsum",
+  "fullName" : "testcase.soc.index_page.test_log_summary.Test_LogSummary#test_logsum",
+  "historyId" : "79121f05b07a9fc33e960880da1f5d94",
+  "time" : {
+    "start" : 1589869451510,
+    "stop" : 1589869451510,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "statusMessage" : "TypeError: setup_class() missing 1 required positional argument: 'cls'",
+  "statusTrace" : "a = (), kw = {}, __tracebackhide__ = True, params = OrderedDict(), args = []\n\n    @wraps(func)\n    def impl(*a, **kw):\n        __tracebackhide__ = True\n        params = func_parameters(func, *a, **kw)\n        args = list(map(lambda x: represent(x), a))\n        with StepContext(self.title.format(*args, **params), params):\n>           return func(*a, **kw)\nE           TypeError: setup_class() missing 1 required positional argument: 'cls'\n\nvenv\\lib\\site-packages\\allure_commons\\_allure.py:157: TypeError",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "_Class__pytest_setup_class",
+    "time" : {
+      "start" : 1589869451511,
+      "stop" : 1589869451537,
+      "duration" : 26
+    },
+    "status" : "broken",
+    "statusMessage" : "TypeError: setup_class() missing 1 required positional argument: 'cls'\n",
+    "statusTrace" : "  File \"C:\\Users\\87241\\PycharmProjects\\soc-auto-test\\venv\\lib\\site-packages\\pluggy\\callers.py\", line 187, in _multicall\n    res = hook_impl.function(*args)\n  File \"C:\\Users\\87241\\PycharmProjects\\soc-auto-test\\venv\\lib\\site-packages\\_pytest\\fixtures.py\", line 964, in pytest_fixture_setup\n    result = call_fixture_func(fixturefunc, request, kwargs)\n  File \"C:\\Users\\87241\\PycharmProjects\\soc-auto-test\\venv\\lib\\site-packages\\_pytest\\fixtures.py\", line 788, in call_fixture_func\n    res = next(it)\n  File \"C:\\Users\\87241\\PycharmProjects\\soc-auto-test\\venv\\lib\\site-packages\\_pytest\\python.py\", line 703, in xunit_setup_class_fixture\n    _call_with_optional_argument(func, self.obj)\n  File \"C:\\Users\\87241\\PycharmProjects\\soc-auto-test\\venv\\lib\\site-packages\\_pytest\\python.py\", line 636, in _call_with_optional_argument\n    func()\n  File \"C:\\Users\\87241\\PycharmProjects\\soc-auto-test\\venv\\lib\\site-packages\\allure_commons\\_allure.py\", line 157, in impl\n    return func(*a, **kw)\n",
+    "steps" : [ {
+      "name" : "初始化",
+      "time" : {
+        "start" : 1589869451511,
+        "stop" : 1589869451511,
+        "duration" : 0
+      },
+      "status" : "broken",
+      "statusMessage" : "TypeError: setup_class() missing 1 required positional argument: 'cls'\n",
+      "statusTrace" : "  File \"C:\\Users\\87241\\PycharmProjects\\soc-auto-test\\venv\\lib\\site-packages\\allure_commons\\_allure.py\", line 157, in impl\n    return func(*a, **kw)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "首页-数据概要用例合集"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase.soc.index_page"
+  }, {
+    "name" : "suite",
+    "value" : "test_log_summary"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_LogSummary"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-MKBIA25"
+  }, {
+    "name" : "thread",
+    "value" : "14328-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.soc.index_page.test_log_summary"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8cbb979273ff69b5.json",
+  "parameterValues" : [ ]
+}

@@ -2,7 +2,7 @@
 
 testSuite:
     module:
-        soc/test_log_summary.py
+        soc/index_page/test_log_summary.py
 
 
 

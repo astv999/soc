@@ -1,0 +1,33 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "testcase.soc.index_page.test_log_summary",
+    "children" : [ {
+      "name" : "test_login_lot",
+      "uid" : "993ac6ffedbe9164",
+      "parentUid" : "d8fbb4ddaa563a61b2690090c9fd41db",
+      "status" : "broken",
+      "time" : {
+        "start" : 1589940882326,
+        "stop" : 1589940890647,
+        "duration" : 8321
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_logsum",
+      "uid" : "56187b269fcca0f5",
+      "parentUid" : "d8fbb4ddaa563a61b2690090c9fd41db",
+      "status" : "broken",
+      "time" : {
+        "start" : 1589940907501,
+        "stop" : 1589940915516,
+        "duration" : 8015
+      },
+      "flaky" : true,
+      "parameters" : [ ]
+    } ],
+    "uid" : "testcase.soc.index_page.test_log_summary"
+  } ]
+}

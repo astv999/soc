@@ -1,0 +1,37 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Exception: 截图失败!",
+      "children" : [ {
+        "name" : "test_login_lot",
+        "uid" : "993ac6ffedbe9164",
+        "parentUid" : "12e40c34993d37720fb75bda18673709",
+        "status" : "broken",
+        "time" : {
+          "start" : 1589940882326,
+          "stop" : 1589940890647,
+          "duration" : 8321
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_logsum",
+        "uid" : "56187b269fcca0f5",
+        "parentUid" : "12e40c34993d37720fb75bda18673709",
+        "status" : "broken",
+        "time" : {
+          "start" : 1589940907501,
+          "stop" : 1589940915516,
+          "duration" : 8015
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "12e40c34993d37720fb75bda18673709"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}
